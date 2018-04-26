@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Download</title>
+    <link rel="shortcut icon" href="images/webTitle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--主页面样式-->
+    <link rel="stylesheet" href="css/download.css">
+    <!--公共部分样式-->
+    <link rel="stylesheet" href="public/header.css">
+    <link rel="stylesheet" href="public/footer.css">
+    <!--js文件-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116833213-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116833213-1');
+    </script>
+</head>
+<body>
+<div id="header">
+    <script>
+        $.get('public/header.html',function (data) {
+            $('#header').html(data);
+            $('.underline').eq(0).addClass('underlines');
+            $('.delete-link').attr('href','javascript:').removeAttr('target');
+        })
+    </script>
+</div>
+<div class="DownMain">
+    <div class="container Down_content">
+        <div class="Down_Title">
+            <span class="Down_title" data-locale="RatingReport">Rating Report</span>
+        </div>
+        <div class="table-responsive">
+            <table class="table Down_table">
+                <thead>
+                    <tr>
+                        <th data-locale="Project">Project</th>
+                        <th data-locale="RiskScore">Risk Score</th>
+                        <th data-locale="Popularity">Popularity</th>
+                        <th data-locale="Potential">Potential</th>
+                        <th data-locale="RatingScore">Rating Score</th>
+                        <th>
+                            <span data-locale="Report">Report</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <!-- <tr class="trs">
+                        <td class="type_name" style="background-image: url('http://darpalrating-northeast-cdn.s3.amazonaws.com/logo/ADA.png')">BitSD</td>
+                        <td class="type_risk type_RPR">
+                            <span class="RS_HML">High</span>
+                        </td>
+                        <td class="type_popular type_RPR">
+                            <span class="Popular_HML">Low</span>
+                        </td>
+                        <td class="type_potential type_RPR">
+                            <span class="Potential_HML">High</span>
+                        </td>
+                        <td class="type_rating type_RPR">
+                            <span class="Rating_HML">High</span>
+                        </td>
+                        <td class="type_report">
+                            <a href="" class="Report_down" download="https://s3-ap-northeast-1.amazonaws.com/darpalrating-northeast-cdn/Aeternity+_rating+_report.pdf"> Download &darr;</a>
+                        </td>
+                    </tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <script>
+        $.get('public/footer.html',function (data) {
+            $('#footer').html(data);
+        })
+    </script>
+</div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/download.js"></script>
+<script src="js/jquery.i18n.properties.js"></script>
+<script src="js/language.js"></script>
+</html>

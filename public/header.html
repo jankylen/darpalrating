@@ -1,0 +1,42 @@
+<div class="header">
+    <div class="container layout-nav navLayout">
+        <div class="row">
+            <a href="index.html" class="logoLink col-xs-4">
+                <img src="images/logo.png" class="logo" alt="logo">
+            </a>
+            <nav class="navbar navbar-default headerNav col-xs-8">
+                <ul class="nav navbar-nav navbar-right headerUl">
+                    <li class="underline"><a href="download.html" target="_blank" class="delete-link" data-locale="Rating">Rating</a></li>
+                    <li class="underline"><a href="aboutUs.html" target="_blank" data-locale="about" class="header_About">About</a></li>
+                    <li>
+                        <select id="language" style="border:none">
+                            <option value="en">EN</option>
+                            <option value="zh" selected>CN</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<script>
+    //中英文切换按钮
+    $('.dropdown-menu li').click(function () {
+        var caret = $('.caret');
+        $('.dropdown-toggle').children().remove();
+        $('.dropdown-toggle').html($(this).text());
+        caret.appendTo($('.dropdown-toggle'));
+    });
+    $('.dropdown-toggle').click(function () {
+        $(this).css({
+            backgroundColor:'#fff'
+        })
+    });
+/*    $(window).scroll(function(){
+        if($(window).scrollTop){
+            $(".header").css({"position":"fixed","width":"100%","zIndex":'99'});
+        }else{
+            $(".header").css({"position":"static"});
+        }
+    });*/
+</script>

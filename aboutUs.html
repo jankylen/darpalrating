@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="shortcut icon" href="images/webTitle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--公共部分样式-->
+    <link rel="stylesheet" href="public/header.css">
+    <link rel="stylesheet" href="public/footer.css">
+    <!--js文件-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116833213-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116833213-1');
+    </script>
+    <style>
+        html,body,.About_Main{
+            height: 100%;
+        }
+        .About_Main{
+            min-height: 100%;
+            height:auto;
+        }
+        .about_main{
+            padding-bottom: 100px;
+            padding-top: 66px;
+        }
+        #header{
+            margin-bottom: -66px;
+        }
+        @media (min-width:992px) {
+            #footer{
+                position: relative;
+                height: 100px;
+                margin-top: -100px;
+            }
+        }
+        .aboutBanner{
+            width: 100%;
+            height: 400px;
+            background-image: url("images/about.png");
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: center top;
+        }
+        @media screen and (max-width: 767px){
+            .aboutBanner{
+                height: 200px;
+            }
+        }
+        .AboutContent{
+            text-align: center;
+            margin-top: 35px;
+        }
+        .AboutContent .DpRatingTitle{
+            font-size: 48px;
+            color: #9B9B9B;
+        }
+        .DpTeamIntroduce{
+            display: flex;
+            justify-content: center;
+        }
+        .DpTeamIntroduce>p{
+            width: 700px;
+            font-size: 16px;
+            color: #515661;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <script>
+        $.get('public/header.html',function (data) {
+            $('#header').html(data);
+            $('.underline').mouseover(function () {
+                $(this).addClass('underlines').siblings().removeClass('underlines')
+            });
+            $('.underline').mouseout(function () {
+                $(this).removeClass('underlines')
+            });
+            $('.header_About').attr('href','#').removeAttr('target');
+        })
+    </script>
+</div>
+<div class="About_Main">
+   <div class="about_main">
+       <div class="aboutBanner">
+          <!-- <img src="images/about.png" alt="">-->
+       </div>
+       <div class="container">
+           <div class="AboutContent">
+               <span class="DpRatingTitle" data-locale="DpRatingTitle">DarpalRating</span>
+               <div class="DpTeamIntroduce">
+                   <p data-locale="ADRIntroduce">
+                       <a href="https://DarpalRating.org" target="_blank">Darpal Rating</a> is the World's first crypto asset rating organization since May 2017. Our mission is to provide unbiased assessments and essential intelligence for the crypto asset and blockchain community. Guided by the consensus of industry professionals and scientific rating methodologies, Darpal Rating is committed to provide transparency and rigorous research processes for the community to make informed investment decisions. Please refer to our official channels for more details.
+                   </p>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<div id="footer">
+    <script>
+        $.get('public/footer.html',function (data) {
+            $('#footer').html(data);
+            $('.aboutUs').attr('href','#').removeAttr('target');
+        })
+    </script>
+</div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.i18n.properties.js"></script>
+<script src="js/language.js"></script>
+<script>
+
+</script>
+</html>

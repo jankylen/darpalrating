@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>API说明文档</title>
+    <link rel="shortcut icon" href="images/webTitle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--公共部分样式-->
+    <link rel="stylesheet" href="public/header.css">
+    <link rel="stylesheet" href="public/footer.css">
+    <!--js文件-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116833213-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116833213-1');
+    </script>
+    <style>
+        @media (min-width: 1200px){
+            .layout {
+                width: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <script>
+        $.get('public/header.html',function (data) {
+            $('#header').html(data);
+            $('.underline').mouseover(function () {
+                $(this).addClass('underlines').siblings().removeClass('underlines')
+            });
+            $('.underline').mouseout(function () {
+                $(this).removeClass('underlines')
+            });
+        })
+    </script>
+</div>
+<div class="API_Main">
+    <div class="container layout">
+        <div class="API_title" style="margin-top: 50px;font-size: 18px;font-weight: bold;color: #52525D;"><span>Public API Methods</span></div>
+        <div class="API_content" style="margin: 40px 0">
+                <ul>
+                    <li>api: http://api.darpalrating.org/api/index/get</li>
+                    <li>method: GET</li>
+                    <li>input parameters:
+                        <ul>
+                            <li>indexType:1 BVIX</li>
+                            <li>indexType:2 DPC</li>
+                        </ul>
+                    </li>
+                    <li>response:
+                        <ul>
+                            <li>latestValue</li>
+                            <li>changeValue</li>
+                            <li>changePercent</li>
+                            <li>isPositive</li>
+                            <li>indexValue</li>
+                        </ul>
+                    </li>
+                    <li class="API_data">Sample Response:
+                        <pre>
+{
+    "success": true,
+    "resultCode": "0",
+    "msg": "成功",
+    "data": {
+        "indexName": "DPC",
+        "indexValue": [
+            [
+            1523530730000,
+            100.506
+            ],
+            [
+            1523531380000,
+            100.799
+            ],
+            [
+            1523532040000,
+            103.224
+            ],
+            [
+            1523532560000,
+            106.342
+            ],
+            [
+            1523533220000,
+            107.985
+            ],
+            [
+            1523533870000,
+            109.234
+            ],
+            [
+            1523534400000,
+            108.703
+            ]
+        ],
+        "latestValue": 108.7,
+        "changeValue": -0.53,
+        "changePercent": -0.49,
+        "isPositive": -1
+    }
+}
+                        </pre>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</div>
+<div id="footer">
+    <script>
+        $.get('public/footer.html',function (data) {
+            $('#footer').html(data);
+            $('.api').attr('href','#').removeAttr('target');
+        })
+    </script>
+</div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.i18n.properties.js"></script>
+<script src="js/language.js"></script>
+</html>

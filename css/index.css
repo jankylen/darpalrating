@@ -1,0 +1,218 @@
+html {
+    position: relative;
+    height: 100%;
+    overflow-x:hidden;
+}
+body {
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+ul,ol{
+    list-style: none;
+}
+/*初始化css*/
+.tabMenu{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    border-bottom:1px solid #dfdfdf;
+    font-size: 0;
+}
+.BVIXBox{
+    display: none;
+}
+.tabMenu .tab_MI{
+    border-right: none;
+    border-top-left-radius: 10px;
+}
+.tabMenu .tab_BVIX{
+    border-top-right-radius: 10px;
+}
+.tabMenu li{
+    display: inline-block;
+    width: 150px;
+    line-height:44px;
+    font-size: 20px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    border-bottom:none;
+    cursor: pointer;
+    color: #535662;
+}
+.tab_active{
+    background: #eceff6;
+}
+.BVIXTitle span,.MITitle span{
+    font-size: 18px;
+    color: #52525D;
+    font-weight:600;
+}
+/*指数盒子*/
+.indexBox,.MI_indexBox{
+    margin-top: 30px;
+    padding-right: 10px;
+}
+.indexBox>div,.MI_indexBox>div{
+    text-align: right;
+}
+.indexBox .indexBox-number,.MI_indexBox .MI_indexBox-number{
+    font-size: 36px;
+    color: #52525D;
+}
+.changeValue,.MI_changeValue{
+    margin-right:10px;
+}
+.changeValue span:nth-child(1),.MI_changeValue span:nth-child(1){
+    font-size: 18px;
+    font-family: '黑体';
+}
+.indexBox .indexBox-change,.MI_indexBox .MI_indexBox-change{
+    font-size: 16px;
+    color: #5FCB43;
+}
+/*指数变化区域*/
+.introduce{
+    margin: 100px 0;
+}
+.introduce .Title{
+    font-weight: 600;
+    font-size: 18px;
+    color: #54596A;
+    margin-bottom: 15px;
+}
+.introduce-article{
+    font-size: 14px;
+    color: #3B3B49;
+}
+.BVIX,.MI{
+    padding-left: 0;
+}
+@media (max-width: 1200px) {
+    .DarpalRating{
+        margin-top: 20px;
+    }
+    .BVIX,.MI{
+        padding-left: 15px;
+    }
+}
+.BtcEth_checkBox{
+    position: absolute;
+    z-index: 99;
+    top:9px;
+    left:50%;
+    width: 100px;
+    margin-left: 185px;
+    text-align: center;
+    vertical-align: middle;
+}
+.BtcEth_checkBox input{
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top:-6px;
+}
+.BtcEth_checkBox label{
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight:normal;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.DPC_structure .DPC_table{
+    width: 100%;
+    border-collapse:separate;
+}
+.DPC_structure .DPC_table thead th{
+    color: #52525D;
+    padding: 15px 20px;
+    border: 1px solid #DFDFDF;
+    background: #f6f6f6;
+    font-size: 12px;
+}
+.DPC_structure .DPC_table thead th:first-child{
+    border-top-left-radius: 4px;
+}
+.DPC_structure .DPC_table thead th:last-child{
+    border-top-right-radius: 4px;
+}
+.DPC_structure .DPC_table td{
+    color: #3B3B49;
+    vertical-align: top;
+    border: 1px solid #DFDFDF;
+    padding: 20px;
+    font-size: 12px;
+    border-top:none;
+}
+.DPC_structure .DPC_table td:nth-child(3){
+    padding: 10px;
+}
+.DPC_structure .DPC_table tr td:last-child,.DPC_structure .DPC_table tr td:nth-child(2),.DPC_structure .DPC_table thead th:last-child,.DPC_structure .DPC_table thead th:nth-child(2){
+    border-left: none;
+}
+.DPC_structure .DPC_table tr:last-child td:first-child{
+    border-bottom-left-radius: 4px;
+}
+.DPC_structure .DPC_table tr:last-child td:last-child{
+    border-bottom-right-radius: 4px;
+}
+.DPC_structure .DPC_table tbody .DPC_firstTd{
+    /*white-space: nowrap;*/
+    font-weight: bold;
+    width: 18%;
+}
+@media screen and (max-width: 767px){
+    .DPC_structure{
+        overflow-x: auto;
+        border: 1px solid #ddd !important;
+    }
+    .BtcEth_checkBox{
+        margin-left: -50px;
+        left: 86px;
+        top: -15px;
+    }
+}
+@media (max-width: 1200px) {
+    .DPC_structure{
+        border-right: none;
+    }
+    .DPC_structure .DPC_table{
+        width: inherit;
+    }
+}
+@media (max-width: 767px) {
+    .DPC_structure .DPC_table tbody td:nth-child(1){
+        white-space: normal;
+    }
+}
+/*表样式*/
+.highcharts-point{
+    width: 10px;
+    height: 10px;
+}
+rect[class=highcharts-point]{
+    y:5
+}
+tspan{
+    font-weight: normal !important;
+}
+/*表样式*/
+/*介绍区域*/
+.ConstituentTable{
+    width: 100% !important;
+}
+.ConstituentTable td{
+    font-weight:normal !important;
+    border:none !important;
+    padding: 2px 10px !important;
+    /*text-align: center;*/
+    width: 17%;
+}
+.ConstituentTable tr td:nth-child(odd){
+    padding-right: 0 !important;
+    font-weight: bold !important;
+}
+.ConstituentTable tr td:nth-child(even){
+    padding-left: 0 !important;
+    /*text-align: right;*/
+}

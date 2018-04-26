@@ -1,0 +1,51 @@
+.footer{
+    background: #F5F5F5;
+    border-top: 1px solid #E7E9EB;
+    padding: 15px 0;
+}
+.medias{
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.medias>li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.medias>li>a{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.medias>li>a>img{
+    width: 16px;
+}
+.copyDarPal{
+    color: #8F9198;
+}
+.aboutUs,.contactUs,.api{
+    cursor: pointer;
+    color: #3B3B49;
+}
+.api:link,.api:visited,.api:hover,.api:active,.aboutUs:link,.aboutUs:visited,.aboutUs:hover,.aboutUs:active{
+    color: #3B3B49;
+    text-decoration: none;
+}
+@media (max-width: 767px) {
+    .ACA div:nth-child(1),.ACA div:nth-child(2){
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .ACA div:nth-child(1),.ACA div:nth-child(2){
+        margin-bottom: 20px;
+    }
+}
+/*contact us*/
+.contactMenu{
+    padding-left: 0;
+}
+.contactMenu li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
