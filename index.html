@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
-    <title>DarpalRating</title>
+    <title>DPRating</title>
     <link rel="shortcut icon" href="images/webTitle.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--主页面样式-->
@@ -25,7 +25,7 @@
             <div class="Index_Box MIBox">
                 <!--标题-->
                 <div class="MITitle">
-                    <span data-locale="MI">Darpal Composite Index (DPC)</span>
+                    <span data-locale="MI">DP Composite Index (DPC)</span>
                 </div>
                 <!--指数变化显示-->
                 <div class="DPCBox" style="position: relative">
@@ -45,12 +45,12 @@
                             <input type="checkbox" id="ETH"><label for="ETH">ETH</label>
                         </div>
                         <!-- 图表容器 DOM -->
-                        <div id="MIChartBox" class="chartBox" style="height:400px"></div>
+                        <div id="MIChartBox" class="chartBox" style="height:500px"></div>
                     </div>
                 </div>
                 <!--文字介绍区域-->
                 <div class="introduce row">
-                    <div class="col-lg-6 MI">
+                    <div class="col-lg-6 col-md-6 MI">
                         <div class="Title">
                             <span data-locale="DCIS">Darpal Composite Index Structure</span>
                         </div>
@@ -58,248 +58,140 @@
                             <table class="DPC_table">
                                 <thead>
                                     <tr>
-                                        <th data-locale="DPC_Category">Category</th>
-                                        <th data-locale="Weighting">Weighting</th>
-                                        <th data-locale="DPC_CAW">Constituent and Weight</th>
+                                        <th data-locale="DPC_Type">Type</th>
+                                        <th data-locale="Weighting">Weight</th>
+                                        <th data-locale="DPC_CAW">Symbol</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td data-locale="DPC_Currency" class="DPC_firstTd">Currency and Payment</td>
-                                        <td>36.10%</td>
+                                        <td>35.73%</td>
                                         <td>
                                             <table class="ConstituentTable">
                                                 <tr>
                                                     <td>BTC</td>
-                                                    <td>29.01%</td>
+                                                    <td>27.96%</td>
                                                     <td>BCH</td>
-                                                    <td>2.85%</td>
+                                                    <td>4.89%</td>
                                                     <td>LTC</td>
-                                                    <td>1.66%</td>
+                                                    <td>1.59%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>XMR</td>
-                                                    <td>&nbsp;&nbsp;0.79%</td>
+                                                    <td>&nbsp;&nbsp;0.64%</td>
                                                     <td>DASH</td>
-                                                    <td>0.65%</td>
-                                                    <td>ETC</td>
-                                                    <td>0.36%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>XVG</td>
-                                                    <td>&nbsp;&nbsp;0.23%</td>
-                                                    <td>ZEC</td>
-                                                    <td>0.19%</td>
-                                                    <td>BTG</td>
-                                                    <td>0.19%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>NANO</td>
-                                                    <td>&nbsp;&nbsp;0.18%</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>0.64%</td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td data-locale="DPC_DOS" class="DPC_firstTd">Operating System</td>
-                                        <td>23.50%</td>
+                                        <td>25.72%</td>
                                         <td>
                                             <table class="ConstituentTable">
                                                 <tr>
                                                     <td>ETH</td>
-                                                    <td>16.58%</td>
+                                                    <td>18.25%</td>
                                                     <td>EOS</td>
-                                                    <td>2.28%</td>
+                                                    <td>3.73%</td>
                                                     <td>ADA</td>
-                                                    <td>2.10%</td>
+                                                    <td>2.07%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>NEO</td>
-                                                    <td>&nbsp;&nbsp;1.46%</td>
+                                                    <td>&nbsp;&nbsp;1.22%</td>
                                                     <td>QTUM</td>
-                                                    <td>0.48%</td>
-                                                    <td>ZIL</td>
-                                                    <td>0.15%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>AE</td>
-                                                    <td>&nbsp;&nbsp;0.13%</td>
-                                                    <td>RHOC</td>
-                                                    <td>0.13%</td>
-                                                    <td>IOST</td>
-                                                    <td>0.10%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ELF</td>
-                                                    <td>&nbsp;&nbsp;0.08%</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>0.45%</td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td data-locale="DPC_Trading" class="DPC_firstTd">Trading and Transaction</td>
-                                        <td>17.10%</td>
+                                        <td>16.47%</td>
                                         <td>
                                             <table class="ConstituentTable">
                                                 <tr>
                                                     <td>XRP</td>
-                                                    <td>11.99%</td>
+                                                    <td>12.19%</td>
                                                     <td>XLM</td>
-                                                    <td>2.66%</td>
+                                                    <td>2.74%</td>
                                                     <td>OMG</td>
-                                                    <td>0.67%</td>
+                                                    <td>0.63%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>BNB</td>
-                                                    <td>&nbsp;&nbsp;0.61%</td>
+                                                    <td>&nbsp;&nbsp;0.60%</td>
                                                     <td>BTS</td>
-                                                    <td>0.25%</td>
-                                                    <td>WAVES</td>
-                                                    <td>0.22%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>DGD</td>
-                                                    <td>&nbsp;&nbsp;0.22%</td>
-                                                    <td>MKR</td>
-                                                    <td>0.21%</td>
-                                                    <td>REP</td>
-                                                    <td>0.15%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>KCS</td>
-                                                    <td>&nbsp;&nbsp;0.13%</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>0.31%</td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td data-locale="DPC_RWG" class="DPC_firstTd">Real World Gateway</td>
-                                        <td>10.40%</td>
+                                        <td>9.74%</td>
                                         <td>
                                             <table class="ConstituentTable">
                                                 <tr>
                                                     <td>MIOTA</td>
-                                                    <td>&nbsp;&nbsp;3.31%</td>
+                                                    <td>&nbsp;&nbsp;4.12%</td>
                                                     <td>XEM</td>
-                                                    <td>2.40%</td>
+                                                    <td>2.21%</td>
                                                     <td>VEN</td>
-                                                    <td>1.28%</td>
+                                                    <td>1.70%</td>
                                                 </tr>
                                                 <tr>
                                                     <td>ICX</td>
-                                                    <td>&nbsp;&nbsp;0.81%</td>
+                                                    <td>&nbsp;&nbsp;1.06%</td>
                                                     <td>ONT</td>
-                                                    <td>0.73%</td>
-                                                    <td>BTM</td>
-                                                    <td>0.69%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PPT</td>
-                                                    <td>&nbsp;&nbsp;0.63%</td>
-                                                    <td>WTC</td>
-                                                    <td>0.26%</td>
-                                                    <td>FCT</td>
-                                                    <td>0.17%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>GXS</td>
-                                                    <td>&nbsp;&nbsp;0.13%</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>0.65%</td>
                                                 </tr>
                                             </table>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td data-locale="DPC_TS" class="DPC_firstTd">Technical Solution</td>
-                                        <td>6.30%</td>
+                                        <td>5.40%</td>
                                         <td>
                                             <table class="ConstituentTable">
                                                 <tr>
                                                     <td>LSK</td>
-                                                    <td>&nbsp;&nbsp;1.38%</td>
-                                                    <td>SC</td>
-                                                    <td>0.78%</td>
-                                                    <td>WAN</td>
-                                                    <td>0.71%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>STRAT</td>
-                                                    <td>&nbsp;&nbsp;0.65%</td>
+                                                    <td>&nbsp;&nbsp;1.50%</td>
                                                     <td>ZRX</td>
-                                                    <td>0.58%</td>
-                                                    <td>KMD</td>
-                                                    <td>0.45%</td>
+                                                    <td>1.06%</td>
+                                                    <td>SC</td>
+                                                    <td>1.03%</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>AION</td>
-                                                    <td>&nbsp;&nbsp;0.45%</td>
-                                                    <td>LRC</td>
-                                                    <td>0.44%</td>
-                                                    <td>GNT</td>
-                                                    <td>0.44%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ARDR</td>
-                                                    <td>&nbsp;&nbsp;0.43%</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>WAN</td>
+                                                    <td>&nbsp;&nbsp;0.97%</td>
+                                                    <td>STRAT</td>
+                                                    <td>0.84%</td>
                                                 </tr>
                                             </table>
                                          </td>
                                     </tr>
                                     <tr>
                                         <td data-locale="DPC_Others" class="DPC_firstTd">Others</td>
-                                        <td>6.60%</td>
+                                        <td>6.94%</td>
                                         <td>
                                             <table class="ConstituentTable">
                                                 <tr>
                                                     <td>TRX</td>
-                                                    <td>&nbsp;&nbsp;3.31%</td>
+                                                    <td>&nbsp;&nbsp;4.88%</td>
                                                     <td>STEEM</td>
-                                                    <td>0.86%</td>
+                                                    <td>0.80%</td>
                                                     <td>SNT</td>
-                                                    <td>0.51%</td>
+                                                    <td>0.49%</td>
                                                 </tr>
                                                 <tr>
+                                                    <td>XIN</td>
+                                                    <td>&nbsp;&nbsp;0.41%</td>
                                                     <td>BAT</td>
-                                                    <td>&nbsp;&nbsp;0.33%</td>
-                                                    <td>CENNZ</td>
-                                                    <td>0.31%</td>
-                                                    <td>SUB</td>
-                                                    <td>0.31%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>MITH</td>
-                                                    <td>&nbsp;&nbsp;0.28%</td>
-                                                    <td>SYS</td>
-                                                    <td>0.25%</td>
-                                                    <td>FUN</td>
-                                                    <td>0.23%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>NAS</td>
-                                                    <td>&nbsp;&nbsp;0.21%</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>0.35%</td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -308,12 +200,12 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-lg-6 DarpalRating">
+                    <div class="col-lg-6 col-md-6 DarpalRating">
                         <div class="Title">
-                            <span data-locale="ADCI">About Darpal Composite Index</span>
+                            <span data-locale="ADCI"> DP Composite Index (DPC)</span>
                         </div>
                         <div class="introduce-article" data-locale="ADRMIIntroduce">
-                            <a href="https://medium.com/@Darpalrating/darpalrating-darpal-composite-index-an-index-for-tokens-of-all-categories-138f7223a5cf" target="_blank">Darpal Composite Index (DPC)</a> is a comprehensive cryptocurrency market index developed by <a href="http://darpalrating.org" target="_blank">DarpalRating</a>. Index constituents are divided into 6 categories: Currency and Payment, Operating System, Trading and Transaction, Real World Gateway, Technical Solution, Others. The top ten tokens by market cap within each category are selected as index constituents. Tokens within each category are weighted by market cap. The weighting between categories is determined by the square root of the total market cap. The dual layer weighting approach assures large cap constituents do not skew the overall index value while preventing the exclusion of small cap categories. This enables DPC index to provide a wholistic representation of crypto asset market.DPC white paper is available.<a href="http://darpalrating-northeast-cdn.s3.amazonaws.com/index/DPC_Methodology_en.pdf" target="_blank">here</a>.
+                            DP Composite Index (DPC) is a comprehensive cryptocurrency market index developed by DPRating.Index constituents are divided into 6 categories: Currency and Payment, Operating System, Trading and Transaction, Real World Gateway, Technical Solution, Others. The top five tokens by market cap within each category are selected as index constituents. Tokens within each category are weighted by market cap. The weighting between categories is determined by the square root of the total market cap. The dual layer weighting approach assures large cap constituents do not skew the overall index value while preventing the exclusion of small cap categories. This enables DPC index to provide a wholistic representation of crypto asset market. DPC white paper is available <a href="http://darpalrating-northeast-cdn.s3.amazonaws.com/index/DPC_Methodology_en.pdf" target="_blank">here</a>.
                         </div>
                     </div>
                 </div>
@@ -325,23 +217,25 @@
                     <span data-locale="BVIX">Bitcoin Volatility Index (BVIX)</span>
                 </div>
                 <!--指数变化显示-->
-                <div class="indexBox">
-                    <!--动态创建-->
-                    <!-- <div class="indexBox-number">
-                         <span>105.64</span>
-                     </div>
-                     <div class="indexBox-change">
-                         <span class="index">5.64</span>
-                         <span class="percent">0.61%</span>
-                     </div>-->
-                </div>
-                <div class="chartBox" style="position: relative">
-                    <div class="BtcEth_checkBox">
-                        <!--<input type="checkbox" id="BTCPrice"><label for="BTC">BTC</label>
-                        <input type="checkbox" id="ETHPrice"><label for="ETH">ETH</label>-->
+                <div class="BVIX_box" style="position: relative">
+                    <div class="indexBox">
+                        <!--动态创建-->
+                        <!-- <div class="indexBox-number">
+                             <span>105.64</span>
+                         </div>
+                         <div class="indexBox-change">
+                             <span class="index">5.64</span>
+                             <span class="percent">0.61%</span>
+                         </div>-->
                     </div>
-                    <!-- 图表容器 DOM -->
-                    <div id="BVIXChartBox" class="chartBox" style="height:400px"></div>
+                    <div class="chartBox" style="position: relative">
+                        <div class="BtcEth_checkBox">
+                            <!--<input type="checkbox" id="BTCPrice"><label for="BTC">BTC</label>
+                            <input type="checkbox" id="ETHPrice"><label for="ETH">ETH</label>-->
+                        </div>
+                        <!-- 图表容器 DOM -->
+                        <div id="BVIXChartBox" class="chartBox" style="height:500px"></div>
+                    </div>
                 </div>
                 <!--文字介绍区域-->
                 <div class="introduce row">
@@ -350,15 +244,15 @@
                             <span data-locale="AboutBVIX">About BVIX</span>
                         </div>
                         <div class="introduce-article" data-locale="bvixIntroduce">
-                            The world's first forward-looking <a href="https://mp.weixin.qq.com/s/RoTmxF4SXBET6MzMB7W6Dg" target="_blank">Bitcoin Volatility Index (BVIX)</a> developed by <a href="https://darpalrating.org/" target="_blank">DarpalRating</a>. BVIX measures the 30-day expected implied volatilities derived from Bitcoin options. BVIX is implemented in the same way <a href="https://en.wikipedia.org/wiki/VIX" target="_blank">CBOE Volatility Index (VIX)</a> is calculated. Mathematical adjustments were applied to reflect the unique features of Bitcoin. BVIX reflects investors’ general sentiment and uncertainties on future price volatility. Hence, it is also referred as the Bitcoin fear index.
+                            The world’s first forward-looking Bitcoin Volatility Index (BVIX) developed by DPRating. BVIX measures the 30-day expected implied volatilities derived from Bitcoin options. BVIX is implemented in the same way <a href="https://en.wikipedia.org/wiki/VIX" target="_blank">CBOE Volatility Index (VIX)</a> is calculated. Mathematical adjustments were applied to reflect the unique features of Bitcoin. BVIX reflects investors’ general sentiment and uncertainties on future price volatility. Hence, it is also referred as the Bitcoin fear index. BVIX introduction document is available <a href="https://s3-ap-northeast-1.amazonaws.com/darpalrating-northeast-cdn/index/BVIX_Intro_en.pdf" target="_blank">here</a>.
                         </div>
                     </div>
                     <div class="col-lg-6 DarpalRating">
                         <div class="Title">
-                            <span data-locale="ADR">About DarpalRating</span>
+                            <span data-locale="ADR">About DPRating</span>
                         </div>
                         <div class="introduce-article" data-locale="ADRIntroduce">
-                            <a href="https://DarpalRating.org" target="_blank">Darpal Rating</a> is the World's first crypto asset rating organization since May 2017. Our mission is to provide unbiased assessments and essential intelligence for the crypto asset and blockchain community. Guided by the consensus of industry professionals and scientific rating methodologies, Darpal Rating is committed to provide transparency and rigorous research processes for the community to make informed investment decisions. Please refer to our official channels for more details.
+                            <a href="http://DPRating.com" target="_blank">DPRating</a> is the World's first crypto asset rating organization since May 2017. Our mission is to provide unbiased assessments and essential intelligence for the crypto asset and blockchain community. Guided by the consensus of industry professionals and scientific rating methodologies, Darpal Rating is committed to provide transparency and rigorous research processes for the community to make informed investment decisions. Please refer to our official channels for more details.
                         </div>
                     </div>
                 </div>
@@ -407,6 +301,6 @@
 </script>
 <script async src="js/bootstrap.min.js"></script>
 <script src="js/highstock.js"></script>
-<script async src="js/myCharts.js"></script>
+<script async src="js/charts.js"></script>
 <script async src="js/language.js"></script>
 </html>

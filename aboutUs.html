@@ -46,7 +46,7 @@
         .aboutBanner{
             width: 100%;
             height: 400px;
-            background-image: url("images/about.png");
+            background-image: url("images/about.jpg");
             background-repeat: no-repeat;
             background-size: auto 100%;
             background-position: center top;
@@ -81,13 +81,8 @@
     <script>
         $.get('public/header.html',function (data) {
             $('#header').html(data);
-            $('.underline').mouseover(function () {
-                $(this).addClass('underlines').siblings().removeClass('underlines')
-            });
-            $('.underline').mouseout(function () {
-                $(this).removeClass('underlines')
-            });
-            $('.header_About').attr('href','#').removeAttr('target');
+            $('.underline').eq(2).addClass('underlines');
+            $('.header_About').attr('href','javascript:').removeAttr('target');
         })
     </script>
 </div>
@@ -98,10 +93,10 @@
        </div>
        <div class="container">
            <div class="AboutContent">
-               <span class="DpRatingTitle" data-locale="DpRatingTitle">DarpalRating</span>
+               <!--<span class="DpRatingTitle" data-locale="DpRatingTitle">DPRating</span>-->
                <div class="DpTeamIntroduce">
                    <p data-locale="ADRIntroduce">
-                       <a href="https://DarpalRating.org" target="_blank">Darpal Rating</a> is the World's first crypto asset rating organization since May 2017. Our mission is to provide unbiased assessments and essential intelligence for the crypto asset and blockchain community. Guided by the consensus of industry professionals and scientific rating methodologies, Darpal Rating is committed to provide transparency and rigorous research processes for the community to make informed investment decisions. Please refer to our official channels for more details.
+                       DPRating is the world’s first crypto asset rating organization since May 2017. Our mission is to provide unbiased assessments and essential intelligence for the crypto asset and blockchain community. Guided by the consensus of industry professionals and scientific rating methodologies, DPRating is committed to provide transparency and rigorous research processes for the community to make informed investment decisions. Please refer to our official channels for more details.
                    </p>
                </div>
            </div>
@@ -120,7 +115,4 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.i18n.properties.js"></script>
 <script src="js/language.js"></script>
-<script>
-
-</script>
 </html>

@@ -1,7 +1,14 @@
 $(function () {
+    var defaultLanguage = localStorage.language || 'zh';
+    for(var i = 0;i<$('.languages').length;i++){
+        if($('.languages')[i].value === defaultLanguage){
+            $('.languages')[i].setAttribute('selected','selected')
+        }
+    }
     /* 选择语言 */
     $("#language").on('change', function() {
         var language = $(this).children('option:selected').val();
+        localStorage.language = language;
         loadProperties(language);
     });
     var loadProperties =  function (language) {
@@ -13,21 +20,24 @@ $(function () {
             callback:function(){
                 $("[data-locale]").each(function(){
 //                        console.log($(this).data("locale"));
+//                     console.log($(this));
                     $(this).html($.i18n.prop($(this).data("locale")));
                 });
             }
         });
     };
     // loadProperties($('#language').children('option:selected').val()); //优先加载中文
+    if (localStorage.language) {
+        return loadProperties(localStorage.language)
+    }
     //判断显示中英文
     $.ajax({
-        url:'http://47.94.240.141:8080/api/address/getLocation',
+        url:'http://47.100.236.14/api/address/getLocation',
         type: 'GET',
         // cache:false,
         dataType:'json',
         data: {},
         success:function (res) {
-            // console.log(res.msg);
             if(res.msg == 'ZH'){
                 loadProperties(res.msg.toLocaleLowerCase())
             }else {

@@ -40,6 +40,11 @@ ul,ol{
     cursor: pointer;
     color: #535662;
 }
+@media (max-width: 767px){
+    .tabMenu li{
+        width: 145px;
+    }
+}
 .tab_active{
     background: #eceff6;
 }
@@ -103,7 +108,7 @@ ul,ol{
     left:50%;
     width: 100px;
     margin-left: 185px;
-    text-align: center;
+    /*text-align: center;*/
     vertical-align: middle;
 }
 .BtcEth_checkBox input{
@@ -172,15 +177,30 @@ ul,ol{
         top: -15px;
     }
 }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px){
     .DPC_structure{
         border-right: none;
     }
     .DPC_structure .DPC_table{
         width: inherit;
     }
+    .BtcEth_checkBox{
+        margin-left:0 !important;
+    }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 992px){
+    .BtcEth_checkBox{
+        margin-left: -34px !important;
+        left: 86px;
+        top: -15px;
+    }
+    .DPC_structure{
+        overflow-x: auto;
+        border: 1px solid #ddd !important;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
     .DPC_structure .DPC_table tbody td:nth-child(1){
         white-space: normal;
     }

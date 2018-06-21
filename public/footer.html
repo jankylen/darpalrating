@@ -3,13 +3,13 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <ul class="medias">
-                    <li><a href="http://t.me/DarpalRating"><img src="images/telegram.png" alt=""></a></li>
-                    <li><a href="http://t.me/DarpalRatingChannel"><img src="images/telegram.png" alt=""></a></li>
-                    <li><a href="http://twitter.com/DarpalRating"><img src="images/twitter.png" alt=""></a></li>
-                    <li><a href="http://medium.com/@darpalrating"><img src="images/Medium.png" alt=""></a></li>
+                    <li class="ImgLinks"><a href="http://t.me/DPRating.com"><img src="images/telegram.png" class="imgLinks"></a></li>
+                    <li class="ImgLinks"><a href="http://t.me/DPRating.com"><img src="images/telegram.png" class="imgLinks"></a></li>
+                    <li class="ImgLinks"><a href="http://twitter.com/DPRating.com"><img src="images/twitter.png" class="imgLinks"></a></li>
+                    <li class="ImgLinks"><a href="https://medium.com/@dprating"><img src="images/Medium.png" class="imgLinks"></a></li>
                 </ul>
                 <div class="copyDarPal">
-                    <p>Copyright © 2017-2018 Darpalrating.org All Rights Reserved</p>
+                    <p>Copyright © 2017-2018 DPRating.com All Rights Reserved</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -22,6 +22,19 @@
         </div>
     </div>
 </div>
+<script>
+    imgLinkschange(0,'images/telegram_hover.png','images/telegram.png');
+    imgLinkschange(1,'images/telegram_hover.png','images/telegram.png');
+    imgLinkschange(2,'images/twitter_hover.png','images/twitter.png');
+    imgLinkschange(3,'images/medium_hover.png','images/Medium.png');
+    function imgLinkschange(num,url1,url2) {
+        $('.ImgLinks').eq(num).mouseover(function () {
+            $(this).find('img').attr('src',url1)
+        }).mouseout(function () {
+            $(this).find('img').attr('src',url2)
+        })
+    }
+</script>
 <!--模态框 联系我们-->
 <div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -32,10 +45,10 @@
             </div>
             <div class="modal-body">
                 <ul class="contactMenu">
-                    <li>Email : service@DarpalRating.org</li>
+                    <li>Email : service@DPRating.com.org</li>
                     <li>Medium : medium/@darpalrating</li>
-                    <li>Telegram : t.me/DarpalRating</li>
-                    <li>Twitter : twitter.com/DarpalRating</li>
+                    <li>Telegram : t.me/DPRating.com</li>
+                    <li>Twitter : twitter.com/DPRating.com</li>
                 </ul>
             </div>
         </div>

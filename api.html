@@ -52,17 +52,24 @@
                     <li>method: GET</li>
                     <li>input parameters:
                         <ul>
-                            <li>indexType:1 BVIX</li>
-                            <li>indexType:2 DPC</li>
+                            <li>(int)indexType: query index type(1:BVIX,2:DPC)</li>
+                            <li>(int)period: query time period (0:12 hour, 1:one day, 2:one week, 3:one month, 4:all time)</li>
+                        </ul>
+                    </li>
+                    <li>example url:
+                        <ul>
+                            <li>http://api.darpalrating.org/api/index/get?indexType=1&period=0</li>
                         </ul>
                     </li>
                     <li>response:
                         <ul>
-                            <li>latestValue</li>
-                            <li>changeValue</li>
-                            <li>changePercent</li>
-                            <li>isPositive</li>
-                            <li>indexValue</li>
+                            <li>latestValue: latest value</li>
+                            <li>changeValue: recent 24hour changed value</li>
+                            <li>changePercent: recent 24hour changed percent</li>
+                            <li>isPositive: 1:increase ,2: decrease</li>
+                            <li>indexValue: [timestamp,index value]</li>
+                            <li>btcPrice: [timestamp, btc price]</li>
+                            <li>ethPrice: [timestamp, eth price]</li>
                         </ul>
                     </li>
                     <li class="API_data">Sample Response:
@@ -72,42 +79,58 @@
     "resultCode": "0",
     "msg": "成功",
     "data": {
-        "indexName": "DPC",
-        "indexValue": [
-            [
-            1523530730000,
-            100.506
-            ],
-            [
-            1523531380000,
-            100.799
-            ],
-            [
-            1523532040000,
-            103.224
-            ],
-            [
-            1523532560000,
-            106.342
-            ],
-            [
-            1523533220000,
-            107.985
-            ],
-            [
-            1523533870000,
-            109.234
-            ],
-            [
-            1523534400000,
-            108.703
-            ]
-        ],
-        "latestValue": 108.7,
-        "changeValue": -0.53,
-        "changePercent": -0.49,
-        "isPositive": -1
-    }
+                "indexName": "DPC",
+                "indexValue": [
+                                    [
+                                        1523588400000,
+                                        114.275
+                                    ],
+                                    [
+                                        1523746210000,
+                                        117.628
+                                    ],
+                                    [
+                                        1523892360000,
+                                        118.548
+                                    ]
+                                    ...
+                              ],
+                "btcPrice":  [
+                                    [
+                                        1523588400000,
+                                        7843.58
+                                    ],
+                                    [
+                                        1523746210000,
+                                        8045.48
+                                    ],
+                                    [
+                                        1523892360000,
+                                        7983.37
+                                    ]
+                                    ...
+                            ],
+                "ethPrice": [
+                                    [
+                                        1523588400000,
+                                        489.005
+                                    ],
+                                    [
+                                        1523746210000,
+                                        506.052
+                                    ],
+                                    [
+                                        1523892360000,
+                                        504.47
+                                    ]
+                                    ...
+                            ],
+                "latestValue": 173.11,
+                "changeValue": 6.65,
+                "changePercent": 3.99,
+                "isPositive": 1,
+                "size": 20
+            }
 }
                         </pre>
                     </li>

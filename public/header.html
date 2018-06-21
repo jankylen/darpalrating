@@ -1,22 +1,38 @@
 <div class="header">
     <div class="container layout-nav navLayout">
-        <div class="row">
-            <a href="index.html" class="logoLink col-xs-4">
-                <img src="images/logo.png" class="logo" alt="logo">
-            </a>
-            <nav class="navbar navbar-default headerNav col-xs-8">
-                <ul class="nav navbar-nav navbar-right headerUl">
-                    <li class="underline"><a href="download.html" target="_blank" class="delete-link" data-locale="Rating">Rating</a></li>
-                    <li class="underline"><a href="aboutUs.html" target="_blank" data-locale="about" class="header_About">About</a></li>
-                    <li>
-                        <select id="language" style="border:none">
-                            <option value="en">EN</option>
-                            <option value="zh" selected>CN</option>
-                        </select>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid header_nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="logoLink" >
+                        <img src="images/logoRating.png" class="logo" alt="logo" style="vertical-align: middle;height: 30px;">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="underline"><a href="http://token.dprating.com" target="_blank" data-locale="Token">Token</a></li>
+                        <li class="underline"><a href="download.html" target="_blank" class="header_Rating" data-locale="Rating">Rating</a></li>
+                        <li class="underline"><a href="aboutUs.html" target="_blank" data-locale="about" class="header_About">About</a></li>
+                        <li style="padding: 0  10px 0 0">
+                            <span><a href="http://account.dprating.com/login" class="header_login" data-locale="login">Login</a></span>
+                            <span>丨</span>
+                            <span><a href="http://account.dprating.com/register" class="header_login" data-locale="register">Register</a></span>
+                        </li>
+                        <li>
+                            <select id="language" style="border:none">
+                                <option value="en" class="languages">EN</option>
+                                <option value="zh" class="languages">中文</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
     </div>
 </div>
 <script>
@@ -32,11 +48,4 @@
             backgroundColor:'#fff'
         })
     });
-/*    $(window).scroll(function(){
-        if($(window).scrollTop){
-            $(".header").css({"position":"fixed","width":"100%","zIndex":'99'});
-        }else{
-            $(".header").css({"position":"static"});
-        }
-    });*/
 </script>

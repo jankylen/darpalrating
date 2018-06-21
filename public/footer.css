@@ -28,7 +28,10 @@
 }
 .api:link,.api:visited,.api:hover,.api:active,.aboutUs:link,.aboutUs:visited,.aboutUs:hover,.aboutUs:active{
     color: #3B3B49;
-    text-decoration: none;
+    /*text-decoration: none;*/
+}
+.contactUs:hover{
+    text-decoration: underline;
 }
 @media (max-width: 767px) {
     .ACA div:nth-child(1),.ACA div:nth-child(2){
